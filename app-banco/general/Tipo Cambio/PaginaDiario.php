@@ -1,42 +1,34 @@
 <?php
 
+include "arriba.php";
+include_once "Diario.php";
 
- ?>
- <div class="container">
-   <h2>Panels with Contextual Classes</h2>
-   <div class="panel-group">
-     <div class="panel panel-default">
-       <div class="panel-heading">Panel with panel-default class</div>
-       <div class="panel-body">Panel Content</div>
-     </div>
-
-     <div class="panel panel-primary">
-       <div class="panel-heading">Panel with panel-primary class</div>
-       <div class="panel-body">Panel Content</div>
-     </div>
-
-     <div class="panel panel-success">
-       <div class="panel-heading">Panel with panel-success class</div>
-       <div class="panel-body">Panel Content</div>
-     </div>
-
-     <div class="panel panel-info">
-       <div class="panel-heading">Panel with panel-info class</div>
-       <div class="panel-body">Panel Content</div>
-     </div>
-
-     <div class="panel panel-warning">
-       <div class="panel-heading">Panel with panel-warning class</div>
-       <div class="panel-body">Panel Content</div>
-     </div>
-
-     <div class="panel panel-danger">
-       <div class="panel-heading">Panel with panel-danger class</div>
-       <div class="panel-body">Panel Content</div>
-     </div>
-   </div>
- </div>
+?>
+<div class="about-box">
+  <div class="container">
+    <div class="row">
+      <br>
+      <div class="container">
+        <?php
+        $cambio=new CambioDiario();
+        $arreglo=$cambio->Cambio();
+        $fecha=$arreglo['fecha'];
+        $dcam=$arreglo['referencia'];
+         ?>
+        <h2>Cambio del Dia  </h2>
+        <div class="panel-group">
+          <div class="panel panel-success">
+            <div class="panel-heading">Fecha " <?php echo $fecha; ?>  " </div>
+            <div class="panel-body">
+              <h1>Q. <?php echo $dcam; ?></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php
-
- ?>
+include "abajo.php";
+?>
