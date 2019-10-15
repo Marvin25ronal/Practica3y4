@@ -20,6 +20,9 @@
  		} else if($correo==null){
  			return "Error al registrarse, el campo 'Correo' debe llenarse obligatoriamente.";
  		}
+ 		if(!is_numeric($dpi)){
+ 			return "Error en el campo 'DPI', el DPI solo puede contener números.";
+ 		}
 		$res = agregar_usuario($nombres, $apellidos, $dpi, $saldo, $correo, $contrasena);
 		if($res == 1){
 			return "";
