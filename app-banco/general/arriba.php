@@ -16,7 +16,7 @@ if (session_status() == PHP_SESSION_NONE) {
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!-- Site Metas -->
-<title>CITY Real Estate - Responsive HTML5 Landing Page Template</title>
+<title>Banco</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">

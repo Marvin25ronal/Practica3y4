@@ -12,6 +12,7 @@ function query($query)
   mysqli_close($conexion);
   return  $resultado;
 }
+
 function insertar($query)
 {
   include "Contrasena.php";
