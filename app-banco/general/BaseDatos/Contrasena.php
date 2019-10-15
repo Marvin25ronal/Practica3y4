@@ -1,6 +1,6 @@
 <?php
 $usuario = "root";
-$password = "pensa";
+$password = "1234";
 $servidor = "localhost:3306";
 $basededatos = "db_banco";
  ?>
