@@ -12,7 +12,7 @@ include "arriba.php";
             <div class="panel-heading">Seleccione la fecha inicial </div>
             <div class="panel-body">
               <form class="" action="lista.php" method="post">
-                <input class="" type="date" id="fecha">
+                <input class="" name="fecha" type="date" id="fecha">
                 <br>
                 <br>
                 <input type="submit" name="submit" value="Consultar" class="btn btn-success">
