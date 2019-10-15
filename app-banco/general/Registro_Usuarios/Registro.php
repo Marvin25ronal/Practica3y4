@@ -17,6 +17,8 @@
  			return "Error al registrarse, el campo 'Apellidos' debe llenarse obligatoriamente.";
  		} else if($saldo==null){
  			return "Error al registrarse, el campo 'Saldo inicial' debe llenarse obligatoriamente.";
+ 		} else if($correo==null){
+ 			return "Error al registrarse, el campo 'Correo' debe llenarse obligatoriamente.";
  		}
 		$res = agregar_usuario($nombres, $apellidos, $dpi, $saldo, $correo, $contrasena);
 		if($res == 1){
