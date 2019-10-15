@@ -10,9 +10,13 @@
 	}
 	function create_user($nombres, $apellidos, $dpi, $saldo, $correo, $contrasena){
 		$res = agregar_usuario($nombres, $apellidos, $dpi, $saldo, $correo, $contrasena);
+		if($res == 1){
+			return "";
+		} 
+		return "error";
 	}
  	function agregar_usuario($nombres, $apellidos, $dpi, $saldo, $correo, $contrasena){
- 		$consulta = "insert into cliente (nombres, apellidos, dpi, saldo, correo, contrasena) values (".$nombres.", ".$apellidos.", ".$dpi.", ".$saldo.", ".$correo.", ".$contrasena.");";
+ 		$consulta = "insert into cliente (nombres, apellidos, dpi, saldo, correo, contrasena) values ('".$nombres."', '".$apellidos."', ".$dpi.", ".$saldo.", '".$correo."', '".$contrasena."');";
  		return insertar($consulta);
  	}
 

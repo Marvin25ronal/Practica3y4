@@ -10,6 +10,11 @@ class PruebaRegistro extends TestCase
     //Crear usuario
     $this->assertSame(true,crear_usuario("Andrea Sofia", "Molina Rodriguez", 3025162585025, 100.00, "andrea@correo.com", "123"));
   }
+
+  public function testRegistroIncorrecto(){
+    //Prueba 2: Sin DPI
+    $this->assertSame(false,crear_usuario("Andrea Sofia", "Molina Rodriguez", null, 100.00, "andrea@correo.com", "123"));
+  }
 }
 
 
