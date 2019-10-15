@@ -10,7 +10,7 @@
 		$saldo = $_POST["saldo"];
 		$correo = $_POST["correo"];
 		$contrasena = $_POST["contrasena"];
-		$retorno = crear_usuario($nombres, $apellidos, $dpi, $saldo, $correo, $contrasena);
+		$retorno = create_user($nombres, $apellidos, $dpi, $saldo, $correo, $contrasena);
         if($retorno!=""){
             $alerta = $retorno;
             $alerta_tipo = "\"alert alert-danger\"";
@@ -24,7 +24,8 @@
   }
 ?>
 
-<p style="text-align: center; font-size: 50px;"><span style="color: #ffffff;"><strong>Agregar nuevo mec&aacute;nico</strong></span></p>
+<div class="col-md-8 col-md-offset-2">
+    <p style="text-align: center; font-size: 50px;"><span style="color: #ffffff;"><strong>Agregar nuevo mec&aacute;nico</strong></span></p>
 <!-- Inicio -->
 <div id="page-wrapper" >
             <div id="page-inner">
@@ -34,7 +35,7 @@
                     <!-- Form Elements -->
                     <form role="form" method="post"> 
                     <div class= <?php echo $alerta_tipo; ?> >
-                    	<?php echo $alerta; ?>
+                        <?php echo $alerta; ?>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -86,7 +87,7 @@
             </div>
             </div>
 <!-- Fin -->
-
+</div>
 
 <?php
   include "abajo.php";
