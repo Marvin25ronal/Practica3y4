@@ -9,30 +9,30 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!-- Site Metas -->
-<title>CITY Real Estate - Responsive HTML5 Landing Page Template</title>
+<title>Banco</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
 
 <!-- Site Icons -->
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
 
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
 <!-- Site CSS -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css">
 <!-- Colors CSS -->
-<link rel="stylesheet" href="css/colors.css">
+<link rel="stylesheet" href="./css/colors.css">
 <!-- ALL VERSION CSS -->
-<link rel="stylesheet" href="css/versions.css">
+<link rel="stylesheet" href="./css/versions.css">
 <!-- Responsive CSS -->
-<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="./css/responsive.css">
 <!-- Custom CSS -->
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="./css/custom.css">
 
 <!-- Modernizer for Portfolio -->
-<script src="js/modernizer.js"></script>
+<script src="./js/modernizer.js"></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -61,12 +61,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us </a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="./Tipo Cambio/PaginaDiario.php">Cambio Diario</a></li>
-            <li> <a href="./Tipo Cambio/PaginaFecha.php">Cambio Fecha inicial</a> </li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="./index.html">Home</a></li>
+
+            <li><a href="Tipo Cambio/PaginaDiario.php">Cambio Diario</a></li>
+            <li> <a href="Tipo Cambio/PaginaFecha.php">Cambio Fecha inicial</a> </li>
+            <li><a href="Registro.php">Registrarse</a></li>
             <li><a href="properties.html">Properties</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li class="social-links"><a href="#"><i class="fa fa-twitter global-radius"></i></a></li>
@@ -85,7 +84,4 @@
     </nav>
   </header>
 
-
-
-  <div class="parallax first-section">
-    <div class="container">
+</div><!-- end section -->
