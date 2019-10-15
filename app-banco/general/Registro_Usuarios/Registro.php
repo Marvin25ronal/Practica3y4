@@ -13,6 +13,8 @@
  			return "Error al registrarse, el campo 'DPI' debe llenarse obligatoriamente.";
  		} else if($nombres==null){
  			return "Error al registrarse, el campo 'Nombres' debe llenarse obligatoriamente.";
+ 		} else if($apellidos==null){
+ 			return "Error al registrarse, el campo 'Apellidos' debe llenarse obligatoriamente.";
  		}
 		$res = agregar_usuario($nombres, $apellidos, $dpi, $saldo, $correo, $contrasena);
 		if($res == 1){
