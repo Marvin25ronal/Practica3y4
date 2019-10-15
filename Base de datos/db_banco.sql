@@ -3,7 +3,7 @@ CREATE DATABASE db_banco;
 USE db_banco; 
 
 CREATE TABLE cliente(
-	no_cuenta BIGINT PRIMARY KEY,
+	no_cuenta BIGINT AUTO_INCREMENT PRIMARY KEY,
     nombres varchar(255),
     apellidos varchar(255),
     dpi bigint,
