@@ -1,7 +1,8 @@
 <?php
 class CambioFechaInicial{
-  public function Cambio(){
-    $fecha="11/09/2018";
+  public function Cambio($fecha){
+    $fecha=date("d/m/Y", strtotime($fecha));;
+  //  $fecha="14/10/2019";
     $url='http://www.banguat.gob.gt/variables/ws/TipoCambio.asmx?wsdl';
     try {
         $soapClient=new SoapClient($url);
