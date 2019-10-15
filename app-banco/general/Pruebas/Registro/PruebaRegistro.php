@@ -22,6 +22,8 @@ class PruebaRegistro extends TestCase
     $this->assertSame(false,crear_usuario("Andrea Sofia", "Molina Rodriguez", 3025162585025, null, "andrea@correo.com", "123"));
     //Prueba 6: Sin correo
     $this->assertSame(false,crear_usuario("Andrea Sofia", "Molina Rodriguez", 3025162585025, 100.00, null, "123"));
+    //Prueba 7: DPI invalido
+    $this->assertSame(false,crear_usuario("Andrea Sofia", "Molina Rodriguez", "hola", 100.00, null, "123"));
   }
 }
 

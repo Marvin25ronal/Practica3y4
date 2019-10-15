@@ -24,10 +24,10 @@
 		if($res == 1){
 			return "";
 		} 
-		return "error";
+		return "Error al registrarse, verifique los datos ingresados.";
 	}
  	function agregar_usuario($nombres, $apellidos, $dpi, $saldo, $correo, $contrasena){
- 		$consulta = "insert into cliente (nombres, apellidos, dpi, saldo, correo, contrasena) values ('".$nombres."', '".$apellidos."', ".$dpi.", ".$saldo.", '".$correo."', '".$contrasena."');";
+ 		$consulta = "insert into cliente (nombres, apellidos, dpi, saldo, correo, contrasena) values ('".$nombres."', '".$apellidos."', '".$dpi."', '".$saldo."', '".$correo."', '".$contrasena."');";
  		return insertar($consulta);
  	}
 
