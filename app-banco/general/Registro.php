@@ -23,6 +23,7 @@
         }
   }
 ?>
+
 <p style="text-align: center; font-size: 50px;"><span style="color: #ffffff;"><strong>Agregar nuevo mec&aacute;nico</strong></span></p>
 <!-- Inicio -->
 <div id="page-wrapper" >
@@ -39,6 +40,7 @@
                         <div class="panel-heading">
                             Registrar usuario
                         </div>
+                        <div class="panel-group">
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-md-12 col-sm-4">
@@ -76,6 +78,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                     </form>
                      <!-- End Form Elements -->
