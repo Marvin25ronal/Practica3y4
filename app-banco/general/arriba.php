@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!-- Site Metas -->
-<title>CITY Real Estate - Responsive HTML5 Landing Page Template</title>
+<title>Banco</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -65,7 +65,7 @@
 
             <li><a href="Tipo Cambio/PaginaDiario.php">Cambio Diario</a></li>
             <li> <a href="Tipo Cambio/PaginaFecha.php">Cambio Fecha inicial</a> </li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="Registro.php">Registrarse</a></li>
             <li><a href="properties.html">Properties</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li class="social-links"><a href="#"><i class="fa fa-twitter global-radius"></i></a></li>
