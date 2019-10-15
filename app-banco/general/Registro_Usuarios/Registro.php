@@ -11,7 +11,9 @@
 	function create_user($nombres, $apellidos, $dpi, $saldo, $correo, $contrasena){
 		if($dpi==null){
  			return "Error al registrarse, el campo 'DPI' debe llenarse obligatoriamente.";
- 		} 
+ 		} else if($nombres==null){
+ 			return "Error al registrarse, el campo 'Nombres' debe llenarse obligatoriamente.";
+ 		}
 		$res = agregar_usuario($nombres, $apellidos, $dpi, $saldo, $correo, $contrasena);
 		if($res == 1){
 			return "";
