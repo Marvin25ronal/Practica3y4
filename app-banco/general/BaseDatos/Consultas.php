@@ -61,8 +61,6 @@ function pruebaTrans($c1, $c2, $cantidad, $saldo)
     return 5;
   }
 
-
-
   return 1; 
 }
 

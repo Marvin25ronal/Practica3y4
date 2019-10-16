@@ -17,22 +17,22 @@ class PruebaTransferencia extends TestCase
 
     public function testTransferenciaExitosa()
     { //retorna 1
-        $this->assertEquals(1, transferencia(0, 1, 100));
+        $this->assertEquals(1, transferencia(0, 1, 20));
     }
 
     public function testTransferenciaNegativa()
     { //retorna 2
-        $this->assertEquals(2, transferencia(0, 1, -100));
+        $this->assertEquals(2, transferencia(0, 1, -100)); //jackson
     }
 
     public function testTransferenciaConCuentaInvalida()
     { //retorna 3
-        $this->assertEquals(3, transferencia(0, -1, 100));
+        $this->assertEquals(3, transferencia(0, -1, 100)); //jackson
     }
 
     public function testTransferenciaConFondosInsuficientes()
     { //retorna 4
-        $this->assertEquals(4, transferencia(0, 1, 1000000000));
+        $this->assertEquals(4, transferencia(0, 1, 1000000000));//jackson
     }
 
     public function testTransferenciaAsiMismo()
