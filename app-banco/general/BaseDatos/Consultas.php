@@ -46,9 +46,13 @@ function pruebaTrans($c1, $c2, $cantidad)
 {
   if ((!(is_numeric($c1) && is_numeric($c2)))) {
     return 3;   //ya hay cuenta invalida.
-  } else if ($c1 < 0 || $c2 < 0) { 
+  } else if ($c1 < 0 || $c2 < 0) {
     return 3;
   }
+  if ($cantidad <= 0) {
+    return 2; //cantidad negativa o igual a 0
+  }
+  
 }
 
 function transferencia($c1, $c2, $cantidad)
