@@ -42,7 +42,7 @@ function login($user, $contra)
   return 0;
 }
 
-function pruebaTrans($c1, $c2, $cantidad)
+function pruebaTrans($c1, $c2, $cantidad , $saldo)
 {
   if ((!(is_numeric($c1) && is_numeric($c2)))) {
     return 3;   //ya hay cuenta invalida.
@@ -52,12 +52,26 @@ function pruebaTrans($c1, $c2, $cantidad)
   if ($cantidad <= 0) {
     return 2; //cantidad negativa o igual a 0
   }
-  
+
+  if ($cantidad > $saldo) {
+    return 4; //fondos insuficientes
+  }
 }
 
 function transferencia($c1, $c2, $cantidad)
 {
   if ($c1 == 0 || $c2 == 0) {
-    return pruebaTrans($c1, $c2, $cantidad);
+    return pruebaTrans($c1, $c2, $cantidad, 100);
   }
+
+  //se obtiene las dos cuentas y se manda con la cantidad que tiene la cuenta 1
+
+  $saldo = 0; //cantidad que tiene la cuenta
+
+  $var = pruebaTrans($c1, $c2, $cantidad, $saldo);
+
+  if ($var == 1) {
+    //se hace el descuento y se suma a la otra cuenta.
+  }
+  return $var;
 }
