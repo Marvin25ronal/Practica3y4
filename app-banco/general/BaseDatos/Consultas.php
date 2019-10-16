@@ -42,7 +42,7 @@ function login($user, $contra)
   return 0;
 }
 
-function pruebaTrans($c1, $c2, $cantidad , $saldo)
+function pruebaTrans($c1, $c2, $cantidad, $saldo)
 {
   if ((!(is_numeric($c1) && is_numeric($c2)))) {
     return 3;   //ya hay cuenta invalida.
@@ -55,6 +55,10 @@ function pruebaTrans($c1, $c2, $cantidad , $saldo)
 
   if ($cantidad > $saldo) {
     return 4; //fondos insuficientes
+  }
+
+  if ($c1 == $c2) {
+    return 5;
   }
 }
 
