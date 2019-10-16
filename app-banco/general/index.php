@@ -32,7 +32,6 @@ include "arriba.php";
 			<?php
 
 
-			$arreglo=obtenerDatos($_SESSION["no_cuenta"]);
 			if ($info == 1) {
 				echo "login exitoso";
 			} else if ($info == 0) {
@@ -44,6 +43,8 @@ include "arriba.php";
 					<div class="panel panel-success">
 
 						<?php if (isset($_SESSION["no_cuenta"]) && $_SESSION["no_cuenta"] != "") {
+									$arreglo=obtenerDatos($_SESSION["no_cuenta"]);
+	
 							?>
 
 							<div class="panel-heading">Informacion</div>
