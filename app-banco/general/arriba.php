@@ -79,6 +79,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
             <li><a href="./Tipo Cambio/PaginaDiario.php">Cambio Diario</a></li>
             <li> <a href="./Tipo Cambio/PaginaFecha.php">Cambio Fecha inicial</a> </li>
+            <li> <a href="./Registro.php">Registrarse</a> </li>
             
             <li>
 
