@@ -17,7 +17,7 @@ if (session_status() == PHP_SESSION_NONE) {
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!-- Site Metas -->
-<title>CITY Real Estate - Responsive HTML5 Landing Page Template</title>
+<title>BANCO</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -80,13 +80,15 @@ if (session_status() == PHP_SESSION_NONE) {
 
             <li><a href="./.././Tipo Cambio/PaginaDiario.php">Cambio Diario</a></li>
             <li> <a href="./.././Tipo Cambio/PaginaFecha.php">Cambio Fecha inicial</a> </li>
-            <li> <a href="./.././Registro.php">Registrarse</a> </li>
-           
             <li>
 
               <?php
               if (isset($_SESSION["no_cuenta"]) && $_SESSION["no_cuenta"] != "") {
+                echo ' <a href="./../Saldo.php">Consultar saldo</a> </li><li>';
+                echo ' <a href="./../Transferencia.php">Transferencia</a> </li><li>';
                 echo "<a href='./../index.php?logout=s'>Logout</a>";
+              }else{
+                echo '<a href="./.././Registro.php">Registrarse</a>';
               }
               ?>
             </li>

@@ -72,7 +72,7 @@ include "arriba.php";
 										<label for="exampleInputPassword1">Password</label>
 										<input type="password" class="form-control" name="pass" placeholder="Password">
 									</div>
-									<button type="submit" name="send" value="s" class="btn btn-primary">Submit</button>
+									<button type="submit" name="send" value="s" class="btn btn-primary">Login</button>
 								</form>
 							</div>
 						<?php } ?>
