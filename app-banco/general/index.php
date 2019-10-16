@@ -31,9 +31,10 @@ include "arriba.php";
 			<br />
 			<?php
 
+
+			$arreglo=obtenerDatos($_SESSION["no_cuenta"]);
 			if ($info == 1) {
 				echo "login exitoso";
-				$arreglo=obtenerDatos($_SESSION["no_cuenta"]);
 			} else if ($info == 0) {
 				echo "login fallido";
 			}
