@@ -40,5 +40,5 @@ function login($user, $contra)
     return 1;
   }
   return 0;
-
 }
+
