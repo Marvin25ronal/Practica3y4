@@ -5,12 +5,14 @@ class PruebaRegistro extends TestCase
 {
   public function iniciarPrueabas(){
     echo "PRUEBAS REGISTRO DE USUARIOS ----------------------------------";
-    //$this->testConsultaCorrecta();
+    $this->testConsultaCorrecta();
     $this->testConsultaIncorrecta();
   }
 
- /*public function testConsultaCorrecta(){
-  }*/
+  public function testConsultaCorrecta(){
+    //Prueba 2: Consulta correcta
+    $this->assertSame('80.53',consultar_saldo(22));
+  }
 
   public function testConsultaIncorrecta(){
     //Prueba 1: Cuenta no existe

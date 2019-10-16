@@ -6,7 +6,7 @@
  		$respuesta = insertar($consulta);
  		$saldo = -1;
  		while ($res  = mysqli_fetch_array($respuesta)) {
-    		$saldo = $res["no_cuenta"];
+    		$saldo = $res["saldo"];
   		}	
   		return $saldo;
 	}
