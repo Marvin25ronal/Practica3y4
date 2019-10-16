@@ -22,12 +22,12 @@ class PruebaLogin extends TestCase
         $this->assertEquals(1, login(0, '123'));
     }
 
-    //se habia pensado tener tres casos siento estos: 
+    //se habia pensado tener tres casos siento estos:
     // * Login correcto
     // * Cuenta inexistente
     // * Contrasenia erronea
     // pero debido a la seguridad es mejor solo indicar que ha ocurrido un error y no indicas
-    // si existe o no dicha cuenta 
+    // si existe o no dicha cuenta
 
     public function testLoginIncorrecta()
     { //si la cuenta o la contrasenia son erroneas no ingresara
