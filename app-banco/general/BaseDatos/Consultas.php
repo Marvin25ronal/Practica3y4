@@ -42,3 +42,18 @@ function login($user, $contra)
   return 0;
 }
 
+function pruebaTrans($c1, $c2, $cantidad)
+{
+  if ((!(is_numeric($c1) && is_numeric($c2)))) {
+    return 3;   //ya hay cuenta invalida.
+  } else if ($c1 < 0 || $c2 < 0) { 
+    return 3;
+  }
+}
+
+function transferencia($c1, $c2, $cantidad)
+{
+  if ($c1 == 0 || $c2 == 0) {
+    return pruebaTrans($c1, $c2, $cantidad);
+  }
+}
