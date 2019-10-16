@@ -33,6 +33,7 @@ include "arriba.php";
 
 			if ($info == 1) {
 				echo "login exitoso";
+				$arreglo=obtenerDatos($_SESSION["no_cuenta"]);
 			} else if ($info == 0) {
 				echo "login fallido";
 			}
@@ -46,15 +47,28 @@ include "arriba.php";
 
 							<div class="panel-heading">Informacion</div>
 							<div class="panel-body">
-								<form method="get" action="">
-									<div class="form-group">
-										<label for="exampleInputEmail1">Cuenta: <?php echo $_SESSION["no_cuenta"]; ?></label>
-									</div>
-									<div class="form-group">
-										<label for="exampleInputPassword1">Correo: <?php echo $_SESSION["correo"]; ?></label>
-									</div>
-									<button type="submit" name="logout" value="s" class="btn btn-primary">Logout</button>
-								</form>
+								<h3>Nombres</h3>
+								<label><?php echo $arreglo["nombres"]; ?></label>
+								<br>
+								<br>
+								<h3>Apellidos</h3>
+								<label><?php echo $arreglo["apellido"]; ?></label>
+								<br>
+								<br>
+								<h3>No DPI</h3>
+								<label><?php echo $arreglo["dpi"]; ?></label>
+								<br>
+								<br>
+								<h3>Saldo de la cuenta</h3>
+								<label>Q.<?php echo $arreglo["saldo"]; ?></label>
+								<br>
+								<br>
+								<h3>No Cuenta</h3>
+								<label><?php echo $arreglo["no_cuenta"]; ?></label>
+								<br>
+								<br>
+								<h1>Correo</h1>
+								<label><?php echo $arreglo["correo"]; ?></label>
 							</div>
 
 
