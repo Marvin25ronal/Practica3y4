@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class pruebaCambio extends TestCase
+class pruebaInformacion extends TestCase
 {
   public function testInformacion(){
     include_once __DIR__."\../../BaseDatos/Consultas.php";
