@@ -3,6 +3,7 @@ use PHPUnit\Framework\TestCase;
 //prueba jenkins1
 //prueba fallida jenkins
 //corregir prueba
+//prueba polling
 class pruebaInformacion extends TestCase
 {
   public function testInformacion(){
