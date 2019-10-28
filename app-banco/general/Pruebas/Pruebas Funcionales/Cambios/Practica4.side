@@ -1,0 +1,152 @@
+{
+  "id": "911459a4-6fa8-41e0-aff3-9e91246a523b",
+  "version": "2.0",
+  "name": "Practica4",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "ddc5585e-8033-4b11-bfa5-406b920f590b",
+    "name": "Tipo de cambio",
+    "commands": [{
+      "id": "29b26b6e-c82c-46b0-a167-ea79f535bbd4",
+      "comment": "",
+      "command": "open",
+      "target": "/Practica3/Practica3y4/app-banco/general/?cuenta=1&pass=123&send=s",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05e6cec3-0b6f-4cc7-8590-3e29083c3a1b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1bbad65-20a8-44d5-b5a0-3cfee16536da",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cambio Diario",
+      "targets": [
+        ["linkText=Cambio Diario", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cambio Diario')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './Tipo Cambio/PaginaDiario.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cambio Diario')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8527e1b-a8c4-4874-a1f7-edacc6161335",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > a",
+      "targets": [
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cambio Fecha inicial')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './.././Tipo Cambio/PaginaFecha.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b07fad8-e17a-442b-bf4c-1de65eb2d08c",
+      "comment": "",
+      "command": "click",
+      "target": "id=fecha",
+      "targets": [
+        ["id=fecha", "id"],
+        ["name=fecha", "name"],
+        ["css=#fecha", "css:finder"],
+        ["xpath=//input[@id='fecha']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38b4703b-aef0-426f-84ef-c0d0eb5bf821",
+      "comment": "",
+      "command": "type",
+      "target": "id=fecha",
+      "targets": [
+        ["id=fecha", "id"],
+        ["name=fecha", "name"],
+        ["css=#fecha", "css:finder"],
+        ["xpath=//input[@id='fecha']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2019-11-02"
+    }, {
+      "id": "b5e05606-b401-4696-8b00-5a63e4c01fb3",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8ab848c-b9e2-4048-9949-554d282a44fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > a",
+      "targets": [
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cambio Fecha inicial')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './.././Tipo Cambio/PaginaFecha.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac1e3ed3-1b7e-4730-96ff-f3914d1319fb",
+      "comment": "",
+      "command": "click",
+      "target": "id=fecha",
+      "targets": [
+        ["id=fecha", "id"],
+        ["name=fecha", "name"],
+        ["css=#fecha", "css:finder"],
+        ["xpath=//input[@id='fecha']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cd9d51f-dabe-46d5-9492-5b89369ef9be",
+      "comment": "",
+      "command": "type",
+      "target": "id=fecha",
+      "targets": [
+        ["id=fecha", "id"],
+        ["name=fecha", "name"],
+        ["css=#fecha", "css:finder"],
+        ["xpath=//input[@id='fecha']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2019-10-17"
+    }, {
+      "id": "7f7bf992-5e14-4050-a028-8f5f013bc4ec",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "34b884ba-23d6-497a-982d-a686d2028b89",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ddc5585e-8033-4b11-bfa5-406b920f590b"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

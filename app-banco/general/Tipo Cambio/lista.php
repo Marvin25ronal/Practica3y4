@@ -16,11 +16,19 @@ if(isset($_POST['fecha'])){
   <div class="container">
     <div class="row">
       <br>
+      <br>
       <h2>Cambio por fecha <?php echo $fecha ?> </h2>
       <br>
       <?php
       if(isset($fallo)){
-        printf("<div class=\"alert alert-danger\"><a href=\"#\" class=\"alert-link\">".$fallo."</a></div>");
+        $mensaje="";
+
+        if($arreglo==1){
+          $mensaje="No es una fecha";
+        }else if($arreglo==2){
+          $mensaje="La fecha es mayor y no hay registros";
+        }
+        printf("<div class=\"alert alert-danger\"><a href=\"#\" class=\"alert-link\">".$mensaje."</a></div>");
       }else{
         for($i=0;$i<count($arreglo);$i++){
           ?>

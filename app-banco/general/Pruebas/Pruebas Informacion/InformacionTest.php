@@ -1,7 +1,10 @@
 <?php
 use PHPUnit\Framework\TestCase;
-
-class pruebaCambio extends TestCase
+//prueba jenkins1
+//prueba fallida jenkins
+//corregir prueba
+//prueba polling
+class pruebaInformacion extends TestCase
 {
   public function testInformacion(){
     include_once __DIR__."\../../BaseDatos/Consultas.php";
