@@ -1,7 +1,7 @@
 <?php
 include_once (__DIR__."\..\..\Registro_Usuarios\Registro.php");
 use PHPUnit\Framework\TestCase;
-class PruebaRegistro extends TestCase
+class RegistroTest extends TestCase
 {
   public function iniciarPrueabas(){
     echo "PRUEBAS REGISTRO DE USUARIOS ----------------------------------";

@@ -1,3 +1,11 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +17,7 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!-- Site Metas -->
-<title>CITY Real Estate - Responsive HTML5 Landing Page Template</title>
+<title>BANCO</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -40,6 +48,7 @@
 <![endif]-->
 
 </head>
+
 <body class="realestate_version">
 
   <!-- LOADER -->
@@ -52,6 +61,12 @@
     <nav class="megamenu navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
+          <h1>BANCO USAC</h1>
+          <?php
+          if (isset($_SESSION["no_cuenta"]) && $_SESSION["no_cuenta"] != "") {
+            echo "No. Cuenta: " . $_SESSION["no_cuenta"] . "<br/>" . "Correo: " .  $_SESSION["correo"];
+          }
+          ?>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -61,27 +76,27 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="./../index.html">Home</a></li>
+            <li><a href="./../index.php">Home</a></li>
 
             <li><a href="./.././Tipo Cambio/PaginaDiario.php">Cambio Diario</a></li>
             <li> <a href="./.././Tipo Cambio/PaginaFecha.php">Cambio Fecha inicial</a> </li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="properties.html">Properties</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="social-links"><a href="#"><i class="fa fa-twitter global-radius"></i></a></li>
-            <li class="social-links"><a href="#"><i class="fa fa-facebook global-radius"></i></a></li>
-            <li class="social-links"><a href="#"><i class="fa fa-linkedin global-radius"></i></a></li>
-            <li class="search-option">
-              <button class="search tran3s dropdown-toggle" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></button>
-              <form action="#" class="p-color-bg dropdown-menu tran3s" aria-labelledby="searchDropdown">
-                <input type="text" placeholder="Search....">
-                <button class="p-color-bg"><i class="fa fa-search" aria-hidden="true"></i></button>
-              </form>
+            <li>
+
+              <?php
+              if (isset($_SESSION["no_cuenta"]) && $_SESSION["no_cuenta"] != "") {
+                echo ' <a href="./../Saldo.php">Consultar saldo</a> </li><li>';
+                echo ' <a href="./../Transferencia.php">Transferencia</a> </li><li>';
+                echo "<a href='./../index.php?logout=s'>Logout</a>";
+              }else{
+                echo '<a href="./.././Registro.php">Registrarse</a>';
+              }
+              ?>
             </li>
+
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-</div><!-- end section -->
+  </div><!-- end section -->
