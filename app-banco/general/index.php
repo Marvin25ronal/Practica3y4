@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "./BaseDatos/Consultas.php";
+include_once "./BaseDatos/Funciones.php";
 
 $info = 2;
 if (isset($_GET["send"])) {
