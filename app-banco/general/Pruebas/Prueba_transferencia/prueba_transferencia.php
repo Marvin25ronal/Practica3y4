@@ -1,6 +1,6 @@
 <?php
 
-include_once(__DIR__ . "\..\..\BaseDatos\Consultas.php");
+include_once(__DIR__ . "\..\..\BaseDatos\Funciones.php");
 
 use PHPUnit\Framework\TestCase;
 

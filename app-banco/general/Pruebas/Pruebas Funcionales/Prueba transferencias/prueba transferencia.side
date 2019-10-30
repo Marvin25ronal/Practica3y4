@@ -1,0 +1,167 @@
+{
+  "id": "0fbdb867-a1d9-462b-81ae-80142dfbd329",
+  "version": "2.0",
+  "name": "prueba transferencia",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "ab8326da-d3ea-4606-b750-a9db5cd6e2d6",
+    "name": "prueba transferencia",
+    "commands": [{
+      "id": "3c57d468-2aa3-4560-8dfd-19c1ff9c9c57",
+      "comment": "",
+      "command": "open",
+      "target": "/analisis/p3_p4/Practica3y4/app-banco/general/index.php?logout=s",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "175857dd-6f33-4e6f-aabf-b2a34a8c70a6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7f719a8-4b0a-4fe2-9300-53e34a78b31c",
+      "comment": "",
+      "command": "click",
+      "target": "name=cuenta",
+      "targets": [
+        ["name=cuenta", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='cuenta']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6caf2498-1961-450c-bca9-7511e7c94eab",
+      "comment": "",
+      "command": "type",
+      "target": "name=cuenta",
+      "targets": [
+        ["name=cuenta", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='cuenta']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "0fadf9ea-0256-420e-bc02-e201495683cf",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "22a91af4-bc9b-4220-9ea0-88b3e133f6ae",
+      "comment": "",
+      "command": "click",
+      "target": "name=send",
+      "targets": [
+        ["name=send", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='send']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee135d4e-aff1-426d-8031-c0efa9353842",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Transferencia",
+      "targets": [
+        ["linkText=Transferencia", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Transferencia')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './Transferencia.php')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Transferencia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1d1c3b8-db30-4c16-9a3b-e503b60a342a",
+      "comment": "",
+      "command": "click",
+      "target": "name=cuenta",
+      "targets": [
+        ["name=cuenta", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='cuenta']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30188fdc-ee4a-4791-bc29-c6ce38477ce7",
+      "comment": "",
+      "command": "select",
+      "target": "name=cuenta",
+      "targets": [],
+      "value": "label=2"
+    }, {
+      "id": "73d17c57-0c4a-4bbf-b429-c9d6cea21923",
+      "comment": "",
+      "command": "click",
+      "target": "name=cuenta",
+      "targets": [
+        ["name=cuenta", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='cuenta']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8decb15-ba6f-4db9-b7d3-016e3b0f67c7",
+      "comment": "",
+      "command": "click",
+      "target": "name=monto",
+      "targets": [
+        ["name=monto", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='monto']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bb5a1e2-530f-4def-ad5a-82192a9c80c7",
+      "comment": "",
+      "command": "type",
+      "target": "name=monto",
+      "targets": [
+        ["name=monto", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='monto']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "83ba48a5-451e-4025-96c2-b15802248cd2",
+      "comment": "",
+      "command": "click",
+      "target": "name=send",
+      "targets": [
+        ["name=send", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='send']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Realizar transferencia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d0935422-cfef-431a-845e-4d69b6dfee1a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ab8326da-d3ea-4606-b750-a9db5cd6e2d6"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

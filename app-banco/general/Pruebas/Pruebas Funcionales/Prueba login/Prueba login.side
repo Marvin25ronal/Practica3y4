@@ -1,0 +1,155 @@
+{
+  "id": "03d8df3a-2d76-44c5-ba76-0a8d30a87565",
+  "version": "2.0",
+  "name": "practica3y4",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "e2ab8297-11fc-4090-bede-6e0370b764ac",
+    "name": "prueba login",
+    "commands": [{
+      "id": "f89d636a-464d-4a83-a1c8-8d01e76d0e3d",
+      "comment": "",
+      "command": "open",
+      "target": "/analisis/p3_p4/Practica3y4/app-banco/general/index.php?logout=s",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bef1c47-49a7-4426-9be1-f42bcffc5bae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "207b2b21-c7cb-4431-b7cd-857057bbe3c0",
+      "comment": "",
+      "command": "click",
+      "target": "name=cuenta",
+      "targets": [
+        ["name=cuenta", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='cuenta']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e38f4575-fb91-493e-9267-3de06b591d15",
+      "comment": "",
+      "command": "type",
+      "target": "name=cuenta",
+      "targets": [
+        ["name=cuenta", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='cuenta']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "6f99c6c4-8218-4ddf-aca4-9bc5531b0697",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "0fb2477a-21c7-4b25-bdb0-beba0138f2fa",
+      "comment": "",
+      "command": "click",
+      "target": "name=send",
+      "targets": [
+        ["name=send", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='send']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "451bef98-98ed-4f85-9167-4da43b284aab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cambio Diario",
+      "targets": [
+        ["linkText=Cambio Diario", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cambio Diario')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './Tipo Cambio/PaginaDiario.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cambio Diario')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bcf2f70-0fb5-4ffc-b419-04085fee5b46",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > a",
+      "targets": [
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cambio Fecha inicial')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './.././Tipo Cambio/PaginaFecha.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9008cd97-4e55-44d7-a0d5-b7c240802cb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) > a",
+      "targets": [
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Consultar saldo')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './../Saldo.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c44b9695-d27c-4d2d-90c4-ab572b5ee952",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Transferencia",
+      "targets": [
+        ["linkText=Transferencia", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Transferencia')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './Transferencia.php')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Transferencia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35a31d9e-8060-4bff-b65b-462ca6f07898",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?logout=s')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d715b8b2-020d-49e9-b925-f278bad061d3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e2ab8297-11fc-4090-bede-6e0370b764ac"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

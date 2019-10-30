@@ -15,9 +15,16 @@
             $alerta = $retorno;
             $alerta_tipo = "\"alert alert-danger\"";
         } else {
+            $cuenta = insertar("select no_cuenta from cliente order by no_cuenta desc limit 1");
+            $no_cuenta = '';
+            while ($res  = mysqli_fetch_array($cuenta)) {
+                $no_cuenta = $res['no_cuenta'];
+            }
             ?>
             <script type="text/javascript">
-            location.href="index.php";
+                var no_cuenta = <?php echo $no_cuenta ?>;
+                alert("Bienvenido! Su número de cuenta es: "+no_cuenta+"\nYa puede iniciar sesión!")
+                location.href="index.php";
             </script>
             <?php
         }

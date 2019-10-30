@@ -1,0 +1,303 @@
+{
+  "id": "334f5ddb-2bca-4294-a7ea-4073bb6c7661",
+  "version": "2.0",
+  "name": "PruebaPractica4",
+  "url": "http://localhost:8080/Practica3y4/app-banco/general",
+  "tests": [{
+    "id": "55cd12c6-5b54-4d06-9898-7c013e453120",
+    "name": "Registro",
+    "commands": [{
+      "id": "1156e1b0-1de6-4a55-975b-9acadd451f3a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Practica3y4/app-banco/general/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7004df6-63db-4283-9a95-5eb4985959bb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb2cf0e7-4553-4647-96c1-874996cb022b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrarse",
+      "targets": [
+        ["linkText=Registrarse", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrarse')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './Registro.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrarse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c889e01c-afb4-49b5-a06d-2381df1754c7",
+      "comment": "",
+      "command": "click",
+      "target": "name=dpi",
+      "targets": [
+        ["name=dpi", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='dpi']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99e98350-6819-4773-9b04-5191bd361b91",
+      "comment": "",
+      "command": "type",
+      "target": "name=dpi",
+      "targets": [
+        ["name=dpi", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='dpi']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3036985210101"
+    }, {
+      "id": "e497a503-9505-4794-8985-b5f3ba755ee4",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombres",
+      "targets": [
+        ["name=nombres", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='nombres']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fe0d2fc-78ed-495d-b2bf-12c66e32e891",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombres",
+      "targets": [
+        ["name=nombres", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='nombres']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Laura Andrea"
+    }, {
+      "id": "cc9c9cea-93c5-4104-aeb7-903bf22fed4c",
+      "comment": "",
+      "command": "type",
+      "target": "name=apellidos",
+      "targets": [
+        ["name=apellidos", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='apellidos']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Morales Lopez"
+    }, {
+      "id": "25926ee6-a463-4c66-a13a-ce53520fe974",
+      "comment": "",
+      "command": "click",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6cd4e7d-d810-45b8-adc1-41d22f8ae87e",
+      "comment": "",
+      "command": "type",
+      "target": "name=saldo",
+      "targets": [
+        ["name=saldo", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='saldo']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "600"
+    }, {
+      "id": "5711f0d6-9a04-4302-a15e-77f45323d5c8",
+      "comment": "",
+      "command": "click",
+      "target": "name=correo",
+      "targets": [
+        ["name=correo", "name"],
+        ["css=.form-group:nth-child(8) > .form-control", "css:finder"],
+        ["xpath=//input[@name='correo']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "163b0005-2691-44f4-8012-2abbc56b5957",
+      "comment": "",
+      "command": "type",
+      "target": "name=correo",
+      "targets": [
+        ["name=correo", "name"],
+        ["css=.form-group:nth-child(8) > .form-control", "css:finder"],
+        ["xpath=//input[@name='correo']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "lauralopez@gmail.com"
+    }, {
+      "id": "65f37cc7-3745-48b9-a2b3-247c89bbbcba",
+      "comment": "",
+      "command": "click",
+      "target": "name=contrasena",
+      "targets": [
+        ["name=contrasena", "name"],
+        ["css=.form-group:nth-child(9) > .form-control", "css:finder"],
+        ["xpath=//input[@name='contrasena']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29366bdd-8632-439b-a189-d56110060eae",
+      "comment": "",
+      "command": "type",
+      "target": "name=contrasena",
+      "targets": [
+        ["name=contrasena", "name"],
+        ["css=.form-group:nth-child(9) > .form-control", "css:finder"],
+        ["xpath=//input[@name='contrasena']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "e3b99950-ed38-4775-8976-6a9a26e38525",
+      "comment": "",
+      "command": "click",
+      "target": "name=accept",
+      "targets": [
+        ["name=accept", "name"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@name='accept']", "xpath:attributes"],
+        ["xpath=//div[@id='page-inner']/div/form/div[2]/div[2]/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Registrarse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf195152-b32c-4a9f-81a1-ff8a9fff1fc5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b4faeffb-65cb-4fd3-b106-94b206d8dda8",
+    "name": "Consulta Saldo",
+    "commands": [{
+      "id": "35aa0771-16c2-4b80-be42-cbe1d4ba3887",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Practica3y4/app-banco/general/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ab7dbee-4f08-4834-97f0-f2a465d39451",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58dee9c4-1e5d-48a9-83b4-e110d1c6e7ad",
+      "comment": "",
+      "command": "click",
+      "target": "name=cuenta",
+      "targets": [
+        ["name=cuenta", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='cuenta']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "367eccee-5749-4732-88d1-fec966fa2871",
+      "comment": "",
+      "command": "type",
+      "target": "name=cuenta",
+      "targets": [
+        ["name=cuenta", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='cuenta']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "31"
+    }, {
+      "id": "5a567c14-3802-48e7-a8a9-b208c2ab82cc",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "05266eaf-c1cd-4100-8dc7-d097e71b4594",
+      "comment": "",
+      "command": "click",
+      "target": "name=send",
+      "targets": [
+        ["name=send", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='send']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0f4566b-b4d0-40d6-adb1-17027a454dc5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Saldo",
+      "targets": [
+        ["linkText=Saldo", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Saldo')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './Saldo.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Saldo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d58a2641-9f17-40b3-a51a-1bb363617866",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ae09d001-a4c9-4e96-8d00-43c0a286a26a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/Practica3y4/app-banco/general/Registro.php", "http://localhost:8080/Practica3y4/app-banco/general"],
+  "plugins": []
+}
