@@ -14,7 +14,7 @@ if (isset($_GET["send"])) {
 
 
 include "arriba.php";
-
+include "ObtenerDatos/ObtenerDatos.php";
 
 
 
@@ -43,8 +43,9 @@ include "arriba.php";
 					<div class="panel panel-success">
 
 						<?php if (isset($_SESSION["no_cuenta"]) && $_SESSION["no_cuenta"] != "") {
-									$arreglo=obtenerDatos($_SESSION["no_cuenta"]);
-	
+							$obt=new Datos();
+							$arreglo=$obt->obtenerDatos($_SESSION["no_cuenta"]);
+
 							?>
 
 							<div class="panel-heading">Informacion</div>
@@ -74,7 +75,7 @@ include "arriba.php";
 							</div>
 
 
-						<?php
+							<?php
 						} else {
 							?>
 							<div class="panel-heading">Login</div>

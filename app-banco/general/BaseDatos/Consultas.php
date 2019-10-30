@@ -52,25 +52,7 @@ function login($user, $contra)
   }
   return 0;
 }
-function obtenerDatos($id){
-  $var="select * from cliente where no_cuenta=".$id.";";
-  $consulta=query($var);
-  if($consulta=="No hay servidor"||$consulta=="no hay bd"||$consulta=="algo salio mal"){
-    return -1;
-  }
-  $arreglo=1;
-  while($res=mysqli_fetch_array($consulta)){
-    $arreglo=array(
-      "no_cuenta"=>$res["no_cuenta"],
-      "nombres"=>$res["nombres"],
-      "apellido"=>$res["apellidos"],
-      "dpi"=>$res["dpi"],
-      "saldo"=>$res["saldo"],
-      "correo"=>$res["correo"],
-      "contrasena"=>$res["contrasena"]);
-    }
-    return $arreglo;
-  }
+
 
 
   function pruebaTrans($c1, $c2, $cantidad, $saldo)
@@ -83,46 +65,45 @@ function obtenerDatos($id){
     if ($cantidad <= 0) {
       return 2; //cantidad negativa o igual a 0
     }
-  
+
     if ($cantidad > $saldo) {
       return 4; //fondos insuficientes
     }
-  
+
     if ($c1 == $c2) {
       return 5;
     }
-  
+
     return 1;
   }
-  
+
   function transferencia($c1, $c2, $cantidad)
   {
     if ($c1 == 0 || $c2 == 0) {
-  
+
       return pruebaTrans($c1, $c2, $cantidad, 100);
     }
-  
+
     //se obtiene las dos cuentas y se manda con la cantidad que tiene la cuenta 1
-  
-  
-  
+
+
+
     $consulta = query("select * from cliente where no_cuenta = " . $c1 . ";");
     $saldo = 0;
     while ($res  = mysqli_fetch_array($consulta)) {
-  
+
       $saldo = $res["saldo"];
-  
+
       break;
     }
-  
-  
+
+
     $var = pruebaTrans($c1, $c2, $cantidad, $saldo);
-  
+
     if ($var == 1) {
-  
+
       query("UPDATE cliente set saldo = saldo - " . $cantidad . " where no_cuenta = " . $c1 . ";");
       query("UPDATE cliente set saldo = saldo + " . $cantidad . " where no_cuenta = " . $c2 . "; ");
     }
     return $var;
   }
-  
