@@ -1,5 +1,5 @@
 <?php
-class obtenerDatos{
+class Datos{
   function obtenerDatos($id){
     $var="select * from cliente where no_cuenta=".$id.";";
     $consulta=query($var);

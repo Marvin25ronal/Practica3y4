@@ -43,9 +43,9 @@ include "ObtenerDatos/ObtenerDatos.php";
 					<div class="panel panel-success">
 
 						<?php if (isset($_SESSION["no_cuenta"]) && $_SESSION["no_cuenta"] != "") {
-							$obt=new obtenerDatos();
+							$obt=new Datos();
 							$arreglo=$obt->obtenerDatos($_SESSION["no_cuenta"]);
-							
+
 							?>
 
 							<div class="panel-heading">Informacion</div>
