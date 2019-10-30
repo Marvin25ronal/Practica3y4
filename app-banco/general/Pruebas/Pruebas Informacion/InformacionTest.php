@@ -1,10 +1,8 @@
 <?php
 use PHPUnit\Framework\TestCase;
-//prueba jenkins1
-//prueba fallida jenkins
-//corregir prueba
-//prueba polling
-include_once __DIR__."\../../ObtenerDatos/ObtenerDatos.php"
+
+
+include_once __DIR__."\../../ObtenerDatos/ObtenerDatos.php";
 class pruebaInformacion extends TestCase
 {
   public function testInformacion(){
