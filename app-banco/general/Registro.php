@@ -46,13 +46,13 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Registrar usuario
+                            Registrar un usuario nuevo
                         </div>
                         <div class="panel-group">
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-md-12 col-sm-4">
-                                    <h3>Datos para el nuevo usuario</h3>
+                                    <h3>Datos para la nueva cuenta</h3>
                                     <!-- <form role="form"> -->
                                         <div class="form-group">
                                             <label>DPI</label>
