@@ -78,7 +78,7 @@ include "ObtenerDatos/ObtenerDatos.php";
 							<?php
 						} else {
 							?>
-							<div class="panel-heading">Login</div>
+							<div class="panel-heading">Ingresar</div>
 							<div class="panel-body">
 								<form method="get" action="">
 									<div class="form-group">

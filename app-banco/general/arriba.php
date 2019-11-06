@@ -3,6 +3,15 @@ if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
 
+
+/*
+
+
+HOla
+como
+estas
+
+*/
 ?>
 
 <!DOCTYPE html>
