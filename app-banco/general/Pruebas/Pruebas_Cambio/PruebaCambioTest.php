@@ -7,7 +7,7 @@ class pruebaCambio extends TestCase
     include_once __DIR__."\../../Tipo Cambio/Diario.php";
     $cam=new CambioDiario();
 
-    $this->assertEquals(is_array($cam->Cambio()),true);
+    $this->assertEquals(is_array($cam->Cambio()),false);
     $this->assertEquals(is_array($cam->Cambio()),true);
   }
   public function testCambio2(){
